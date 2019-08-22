@@ -596,10 +596,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1.1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 10
+  m_GravityScale: 8
   m_Material: {fileID: 6200000, guid: 5b1d9a65b32d14649b375a5c8e2e93fd, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -698,7 +698,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bola: {fileID: 1731613703}
   speed: 5
-  forcapulo: 2000
+  forcapulo: 4000
 --- !u!1 &1941401277
 GameObject:
   m_ObjectHideFlags: 0
