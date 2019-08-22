@@ -8,6 +8,7 @@ public class movimentacao : MonoBehaviour
     float move;
     [SerializeField] private float speed;
     [SerializeField] private float forcapulo;
+    
     void Start()
     {
         //forcapulo = 1000;
