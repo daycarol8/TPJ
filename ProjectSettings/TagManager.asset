@@ -6,6 +6,9 @@ TagManager:
   tags:
   - fundo
   - click
+  - tope
+  - pont
+  - Portal
   layers:
   - Default
   - TransparentFX
