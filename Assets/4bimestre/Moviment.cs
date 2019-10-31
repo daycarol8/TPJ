@@ -10,7 +10,14 @@ public class Moviment : MonoBehaviour
     private bool idle;
     private bool andar;
     public SpriteRenderer sprite;
+    public HingeJoint2D hinge;
+    float tempo;
+    float parar;
 
+    private void Start()
+    {
+        //hit = GetComponent<HingeJoint2D>().
+    }
     private void Update()
     {
         anim.SetBool("idle", idle);
@@ -42,5 +49,20 @@ public class Moviment : MonoBehaviour
         rb.velocity = new Vector3(Input.GetAxis("Horizontal") * speed * Time.deltaTime, 0);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Porta")
+        {
+            StartCoroutine(Tempo());
+        }
+    }
+
+    IEnumerator Tempo()
+    {
+        hinge.useMotor = true;
+        yield return new WaitForSeconds(3);
+        hinge.useMotor = false;
+        
+    }
 
 }
